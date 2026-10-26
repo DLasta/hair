@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxe Hair Studio | Premier Hair Salon & Styling Zagreb</title>
+  <meta name="description" content="Luxe Hair Studio in Zagreb offers professional haircuts, coloring, balayage, blowouts and treatments. Beautiful hair. Confident you.">
+  
+  <!-- Favicon (Inline SVG Data URI) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==============================================
+       HEADER & NAVIGATION
+       ============================================== -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <!-- Logo -->
+      <a href="#home" class="logo" aria-label="Luxe Hair Studio Home">
+        <span class="logo-title">LUXE</span>
+        <span class="logo-subtitle">HAIR STUDIO</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions (Desktop CTA & Mobile Hamburger) -->
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary open-booking-modal" data-source="header">
+          Book Appointment
+        </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button type="button" class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
+      <div class="mobile-nav-header">
+        <a href="#home" class="logo mobile-menu-logo" aria-label="Luxe Hair Studio Home">
+          <span class="logo-title">LUXE</span>
+          <span class="logo-subtitle">HAIR STUDIO</span>
+        </a>
+        <button type="button" class="mobile-close-btn" id="mobile-close-btn" aria-label="Close navigation menu">&times;</button>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+        <li><a href="#services" class="mobile-nav-link">Services</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="#reviews" class="mobile-nav-link">Reviews</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-nav-footer">
+        <button type="button" class="btn btn-primary btn-block open-booking-modal" data-source="mobile-menu">
+          Book Appointment
+        </button>
+        <div class="mobile-contact-snippet">
+          <p>📞 +385 91 123 4567</p>
+          <p>📍 Main Street 25, Zagreb</p>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==============================================
+       HERO SECTION
+       ============================================== -->
+  <section class="hero-section" id="home">
+    <div class="hero-background-shape" aria-hidden="true"></div>
+    <div class="container hero-container">
+      <!-- Hero Content -->
+      <div class="hero-content reveal">
+        <div class="hero-tag">
+          <span class="tag-star">★</span>
+          <span>Zagreb's Premier Hair Salon</span>
+        </div>
+        <h1 class="hero-headline">
+          Beautiful Hair.<br>
+          <span class="hero-headline-accent">Confident You.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Professional hair styling, coloring and treatments designed to bring out your best look.
+        </p>
+
+        <div class="hero-cta-group">
+          <button type="button" class="btn btn-primary open-booking-modal" data-source="hero">
+            Book an Appointment
+          </button>
+          <a href="#services" class="btn btn-secondary">
+            View Services
+          </a>
+        </div>
+
+        <!-- Trust Message -->
+        <div class="hero-trust">
+          <div class="trust-avatars" aria-hidden="true">
+            <span class="avatar-pill">SM</span>
+            <span class="avatar-pill">ER</span>
+            <span class="avatar-pill">LK</span>
+            <span class="avatar-pill avatar-star">★</span>
+          </div>
+          <div class="trust-text">
+            <div class="trust-stars" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+            <p class="trust-caption">Trusted by 1,000+ happy clients</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual / Image -->
+      <div class="hero-visual reveal">
+        <div class="hero-image-frame">
+          <img 
+            src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80" 
+            alt="Interior of Luxe Hair Studio showing sleek styling stations and warm ambient lighting" 
+            class="hero-img"
+            loading="eager"
+            fetchpriority="high"
+          >
+          <!-- Floating Salon Badge -->
+          <div class="floating-badge badge-top-right">
+            <span class="badge-icon">✂️</span>
+            <div class="badge-text">
+              <strong>Master Stylists</strong>
+              <span>Custom consultation</span>
+            </div>
+          </div>
+          <!-- Floating Experience Badge -->
+          <div class="floating-badge badge-bottom-left">
+            <span class="badge-icon">🌿</span>
+            <div class="badge-text">
+              <strong>100% Premium Care</strong>
+              <span>Gentle & nourishing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       SERVICES SECTION
+       ============================================== -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-eyebrow">PREMIUM CRAFTSMANSHIP</span>
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle">Professional services tailored to your style.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1: Haircut -->
+        <article class="service-card reveal">
+          <div class="service-card-media">
+            <img 
+              src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" 
+              alt="Stylist performing precision haircut" 
+              class="service-img"
+              loading="lazy"
+            >
+            <span class="service-badge-icon" aria-hidden="true">✂️</span>
+          </div>
+          <div class="service-card-body">
+            <div class="service-header-row">
+              <h3 class="service-name">Haircut</h3>
+              <span class="service-price">From €25</span>
+            </div>
+            <p class="service-desc">Precision haircut and styling.</p>
+            <div class="service-footer">
+              <button 
+                type="button" 
+                class="btn btn-outline btn-sm open-booking-modal" 
+                data-service="Haircut"
+                aria-label="Book Haircut appointment"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 2: Hair Coloring -->
+        <article class="service-card reveal">
+          <div class="service-card-media">
+            <img 
+              src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=800&q=80" 
+              alt="Hair coloring and foil highlights application" 
+              class="service-img"
+              loading="lazy"
+            >
+            <span class="service-badge-icon" aria-hidden="true">🎨</span>
+          </div>
+          <div class="service-card-body">
+            <div class="service-header-row">
+              <h3 class="service-name">Hair Coloring</h3>
+              <span class="service-price">From €55</span>
+            </div>
+            <p class="service-desc">Professional coloring and highlights.</p>
+            <div class="service-footer">
+              <button 
+                type="button" 
+                class="btn btn-outline btn-sm open-booking-modal" 
+                data-service="Hair Coloring"
+                aria-label="Book Hair Coloring appointment"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 3: Balayage -->
+        <article class="service-card reveal">
+          <div class="service-card-media">
+            <img 
+              src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=80" 
+              alt="Soft dimensional balayage hair color" 
+              class="service-img"
+              loading="lazy"
+            >
+            <span class="service-badge-icon" aria-hidden="true">✨</span>
+          </div>
+          <div class="service-card-body">
+            <div class="service-header-row">
+              <h3 class="service-name">Balayage</h3>
+              <span class="service-price">From €80</span>
+            </div>
+            <p class="service-desc">Natural-looking dimensional color.</p>
+            <div class="service-footer">
+              <button 
+                type="button" 
+                class="btn btn-outline btn-sm open-booking-modal" 
+                data-service="Balayage"
+                aria-label="Book Balayage appointment"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 4: Blow Dry -->
+        <article class="service-card reveal">
+          <div class="service-card-media">
+            <img 
+              src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=800&q=80" 
+              alt="Professional blow-dry and salon blowout styling" 
+              class="service-img"
+              loading="lazy"
+            >
+            <span class="service-badge-icon" aria-hidden="true">💨</span>
+          </div>
+          <div class="service-card-body">
+            <div class="service-header-row">
+              <h3 class="service-name">Blow Dry</h3>
+              <span class="service-price">From €20</span>
+            </div>
+            <p class="service-desc">Professional blow-dry and styling.</p>
+            <div class="service-footer">
+              <button 
+                type="button" 
+                class="btn btn-outline btn-sm open-booking-modal" 
+                data-service="Blow Dry"
+                aria-label="Book Blow Dry appointment"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 5: Hair Treatment -->
+        <article class="service-card reveal">
+          <div class="service-card-media">
+            <img 
+              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" 
+              alt="Nourishing hair mask and wash basin treatment" 
+              class="service-img"
+              loading="lazy"
+            >
+            <span class="service-badge-icon" aria-hidden="true">💧</span>
+          </div>
+          <div class="service-card-body">
+            <div class="service-header-row">
+              <h3 class="service-name">Hair Treatment</h3>
+              <span class="service-price">From €30</span>
+            </div>
+            <p class="service-desc">Repair and nourish damaged hair.</p>
+            <div class="service-footer">
+              <button 
+                type="button" 
+                class="btn btn-outline btn-sm open-booking-modal" 
+                data-service="Hair Treatment"
+                aria-label="Book Hair Treatment appointment"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 6: Special Occasion -->
+        <article class="service-card reveal">
+          <div class="service-card-media">
+            <img 
+              src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" 
+              alt="Bridal and special event updo styling" 
+              class="service-img"
+              loading="lazy"
+            >
+            <span class="service-badge-icon" aria-hidden="true">👑</span>
+          </div>
+          <div class="service-card-body">
+            <div class="service-header-row">
+              <h3 class="service-name">Special Occasion</h3>
+              <span class="service-price">From €45</span>
+            </div>
+            <p class="service-desc">Elegant styling for weddings and events.</p>
+            <div class="service-footer">
+              <button 
+                type="button" 
+                class="btn btn-outline btn-sm open-booking-modal" 
+                data-service="Special Occasion"
+                aria-label="Book Special Occasion appointment"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       ABOUT SECTION
+       ============================================== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- About Left Visual -->
+        <div class="about-visual reveal">
+          <div class="about-image-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1000&q=80" 
+              alt="Luxe Hair Studio interior atmosphere with chic mirrors and botanical touches" 
+              class="about-img"
+              loading="lazy"
+            >
+            <div class="about-experience-stamp">
+              <span class="stamp-icon">✨</span>
+              <span class="stamp-title">Bespoke Experience</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Right Content -->
+        <div class="about-content reveal">
+          <span class="section-eyebrow">OUR PHILOSOPHY</span>
+          <h2 class="section-title">Your Hair. Our Passion.</h2>
+          <p class="about-lead">
+            At Luxe Hair Studio, we believe great hair is more than a look — it's confidence. Our experienced stylists combine creativity, technique and quality products to create a style that feels uniquely yours.
+          </p>
+          <p class="about-detail">
+            Every appointment begins with a one-on-one consultation where we take time to understand your lifestyle, hair texture, and aesthetic aspirations. From subtle tone updates to complete transformations, your comfort and hair health are always our top priority.
+          </p>
+
+          <!-- 3 Highlight Badges / Cards -->
+          <div class="about-stats-grid">
+            <div class="about-stat-card">
+              <div class="stat-value">10+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="about-stat-card">
+              <div class="stat-value">1,000+</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="about-stat-card">
+              <div class="stat-value">5★</div>
+              <div class="stat-label">Client Rating</div>
+            </div>
+          </div>
+
+          <div class="about-cta-row">
+            <button type="button" class="btn btn-primary open-booking-modal" data-source="about">
+              Book Appointment
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       GALLERY SECTION
+       ============================================== -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-eyebrow">OUR PORTFOLIO</span>
+        <h2 class="section-title">Recent Work</h2>
+        <p class="section-subtitle">Explore a selection of recent cuts, colors and styling transformations created at Luxe Hair Studio.</p>
+      </div>
+
+      <!-- 6 Gallery Items -->
+      <div class="gallery-grid">
+        <!-- Gallery 1 -->
+        <div class="gallery-item reveal" data-title="Dimensional Balayage" data-category="Balayage" data-img="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1200&q=80">
+          <div class="gallery-media">
+            <img 
+              src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=800&q=80" 
+              alt="Dimensional Balayage with honey blonde waves" 
+              class="gallery-img"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Balayage</span>
+              <h3 class="gallery-caption-title">Dimensional Waves</h3>
+              <p class="gallery-caption-sub">Sun-kissed hand-painted highlights</p>
+              <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery 2 -->
+        <div class="gallery-item reveal" data-title="French Precision Bob" data-category="Haircut" data-img="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1200&q=80">
+          <div class="gallery-media">
+            <img 
+              src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=800&q=80" 
+              alt="Modern precision haircut with layered bob" 
+              class="gallery-img"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Haircut</span>
+              <h3 class="gallery-caption-title">Modern Chic Bob</h3>
+              <p class="gallery-caption-sub">Tailored structure with soft movement</p>
+              <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery 3 -->
+        <div class="gallery-item reveal" data-title="Warm Caramel Highlights" data-category="Hair Coloring" data-img="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=1200&q=80">
+          <div class="gallery-media">
+            <img 
+              src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=800&q=80" 
+              alt="Rich warm caramel and mocha hair color" 
+              class="gallery-img"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Hair Coloring</span>
+              <h3 class="gallery-caption-title">Caramel Glow</h3>
+              <p class="gallery-caption-sub">Rich warm gloss and seamless blend</p>
+              <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery 4 -->
+        <div class="gallery-item reveal" data-title="Signature Velvet Blowout" data-category="Blow Dry" data-img="https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?auto=format&fit=crop&w=1200&q=80">
+          <div class="gallery-media">
+            <img 
+              src="https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?auto=format&fit=crop&w=800&q=80" 
+              alt="Voluminous salon blow dry with lasting shine" 
+              class="gallery-img"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Blow Dry</span>
+              <h3 class="gallery-caption-title">Velvet Blowout</h3>
+              <p class="gallery-caption-sub">Full volume and high-gloss polish</p>
+              <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery 5 -->
+        <div class="gallery-item reveal" data-title="Bridal Updo & Romance" data-category="Special Occasion" data-img="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80">
+          <div class="gallery-media">
+            <img 
+              src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" 
+              alt="Elegant bridal updo styling with floral touches" 
+              class="gallery-img"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Special Occasion</span>
+              <h3 class="gallery-caption-title">Editorial Updo</h3>
+              <p class="gallery-caption-sub">Timeless elegance for weddings & galas</p>
+              <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery 6 -->
+        <div class="gallery-item reveal" data-title="Platinum Blonde Finish" data-category="Hair Treatment" data-img="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1200&q=80">
+          <div class="gallery-media">
+            <img 
+              src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80" 
+              alt="Hairstylist styling client with platinum blonde finish" 
+              class="gallery-img"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Color & Treatment</span>
+              <h3 class="gallery-caption-title">Luminous Blonde</h3>
+              <p class="gallery-caption-sub">Clean tone with deep bonding treatment</p>
+              <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       BOOKING CTA SECTION
+       ============================================== -->
+  <section class="booking-cta-section" id="booking">
+    <div class="container">
+      <div class="booking-cta-card reveal">
+        <div class="cta-decorative-circle" aria-hidden="true"></div>
+        <div class="cta-inner-content">
+          <span class="cta-badge">EXPERIENCE LUXE</span>
+          <h2 class="cta-headline">Ready for a New Look?</h2>
+          <p class="cta-text">
+            Book your appointment today and let our stylists take care of the rest.
+          </p>
+          <div class="cta-action">
+            <button type="button" class="btn btn-primary btn-lg open-booking-modal" data-source="cta-section">
+              Book an Appointment
+            </button>
+          </div>
+          <div class="cta-perks">
+            <span>✨ Complimentary Consultation</span>
+            <span>☕ Italian Artisan Coffee</span>
+            <span>🌿 Cruelty-Free Formulations</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       REVIEWS SECTION
+       ============================================== -->
+  <section class="section reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-eyebrow">CLIENT STORIES</span>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p class="section-subtitle">Real experiences and kind words from our valued salon guests.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <article class="review-card reveal">
+          <div class="review-card-header">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <span class="review-quote-mark" aria-hidden="true">“</span>
+          </div>
+          <p class="review-text">
+            "Absolutely love my new haircut. The stylist understood exactly what I wanted."
+          </p>
+          <div class="review-author">
+            <div class="author-avatar" aria-hidden="true">SM</div>
+            <div class="author-info">
+              <strong class="author-name">Sarah M.</strong>
+              <span class="author-status">Verified Client</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Review 2 -->
+        <article class="review-card reveal">
+          <div class="review-card-header">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <span class="review-quote-mark" aria-hidden="true">“</span>
+          </div>
+          <p class="review-text">
+            "Beautiful salon, friendly staff and amazing results. I will definitely come back."
+          </p>
+          <div class="review-author">
+            <div class="author-avatar" aria-hidden="true">ER</div>
+            <div class="author-info">
+              <strong class="author-name">Emma R.</strong>
+              <span class="author-status">Verified Client</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Review 3 -->
+        <article class="review-card reveal">
+          <div class="review-card-header">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <span class="review-quote-mark" aria-hidden="true">“</span>
+          </div>
+          <p class="review-text">
+            "The best balayage I've ever had. My hair looks natural and healthy."
+          </p>
+          <div class="review-author">
+            <div class="author-avatar" aria-hidden="true">LK</div>
+            <div class="author-info">
+              <strong class="author-name">Laura K.</strong>
+              <span class="author-status">Verified Client</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       CONTACT SECTION
+       ============================================== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-eyebrow">LOCATION & HOURS</span>
+        <h2 class="section-title">Visit Us</h2>
+        <p class="section-subtitle">We would love to welcome you to our calm oasis in central Zagreb.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Information Card -->
+        <div class="contact-info-card reveal">
+          <div class="contact-brand">
+            <h3 class="contact-salon-name">Luxe Hair Studio</h3>
+            <p class="contact-tagline">Crafting signature styles with warmth and expertise.</p>
+          </div>
+
+          <!-- Contact items -->
+          <div class="contact-details-list">
+            <!-- Address -->
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">📍</div>
+              <div class="contact-content">
+                <strong>Address</strong>
+                <p>Main Street 25<br>10000 Zagreb, Croatia</p>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">📞</div>
+              <div class="contact-content">
+                <strong>Phone</strong>
+                <p><a href="tel:+385911234567" class="contact-link">+385 91 123 4567</a></p>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">✉️</div>
+              <div class="contact-content">
+                <strong>Email</strong>
+                <p><a href="mailto:hello@luxehairstudio.com" class="contact-link">hello@luxehairstudio.com</a></p>
+              </div>
+            </div>
+
+            <!-- Opening Hours -->
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">🕒</div>
+              <div class="contact-content">
+                <strong>Opening Hours</strong>
+                <ul class="hours-list">
+                  <li><span>Monday – Friday:</span> <strong>09:00 – 19:00</strong></li>
+                  <li><span>Saturday:</span> <strong>09:00 – 14:00</strong></li>
+                  <li><span>Sunday:</span> <strong>Closed</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Get Directions Button -->
+          <div class="contact-directions-action">
+            <button type="button" class="btn btn-primary" id="get-directions-btn">
+              Get Directions
+            </button>
+          </div>
+        </div>
+
+        <!-- Stylized Map / Directions Showcase -->
+        <div class="contact-map-card reveal">
+          <div class="map-graphic-container">
+            <div class="map-graphic-pin" aria-hidden="true">
+              <div class="pin-pulse"></div>
+              <div class="pin-marker">📍</div>
+            </div>
+            <div class="map-card-overlay">
+              <div class="map-badge">Luxe Hair Studio • Zagreb</div>
+              <h4>Main Street 25, 10000 Zagreb</h4>
+              <p>Short walk from Ban Jelačić Square. Parking available nearby.</p>
+              <button type="button" class="btn btn-secondary btn-sm" id="map-open-btn">
+                Open in Google Maps ↗
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       FOOTER
+       ============================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo footer-logo" aria-label="Luxe Hair Studio Home">
+            <span class="logo-title">LUXE</span>
+            <span class="logo-subtitle">HAIR STUDIO</span>
+          </a>
+          <p class="footer-tagline">Beautiful hair. Confident you.</p>
+        </div>
+
+        <!-- Footer Navigation Links -->
+        <nav class="footer-nav" aria-label="Footer links">
+          <ul class="footer-links-list">
+            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a></li>
+            <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-link">Facebook</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+            <li><button type="button" class="footer-link-btn" id="open-privacy-modal">Privacy Policy</button></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; 2026 Luxe Hair Studio. All rights reserved.
+        </p>
+        <button type="button" class="back-to-top" id="back-to-top" aria-label="Scroll back to top">
+          ↑ Top
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==============================================
+       BOOKING MODAL
+       ============================================== -->
+  <div class="modal-backdrop" id="booking-modal-backdrop" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="booking-modal-title">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="modal-header-text">
+          <span class="modal-eyebrow">APPOINTMENT RESERVATION</span>
+          <h2 class="modal-title" id="booking-modal-title">Book an Appointment</h2>
+        </div>
+        <button type="button" class="modal-close-btn" id="close-booking-modal" aria-label="Close booking modal">
+          &times;
+        </button>
+      </div>
+
+      <!-- WhatsApp Booking Notice Alert -->
+      <div class="demo-form-notice" role="note">
+        <span class="notice-icon" aria-hidden="true">💬</span>
+        <div class="notice-text">
+          <strong>Direct WhatsApp Booking:</strong> Your request opens directly in WhatsApp with your message pre-filled. No account or backend required.
+        </div>
+      </div>
+
+      <!-- Modal Body (Form & Success Container) -->
+      <div class="modal-body">
+        <!-- The Booking Form -->
+        <form id="booking-form" novalidate>
+          <!-- Full Name (Required) -->
+          <div class="form-group">
+            <label for="booking-name" class="form-label">Full Name <span class="required">*</span></label>
+            <input 
+              type="text" 
+              id="booking-name" 
+              name="fullName" 
+              class="form-input" 
+              placeholder="e.g. Sarah Miller" 
+              required
+              autocomplete="name"
+            >
+            <span class="form-error" id="name-error">Please enter your full name.</span>
+          </div>
+
+          <!-- Phone & Email Grid (Phone Required, Email Optional) -->
+          <div class="form-row-2">
+            <!-- Phone (Required) -->
+            <div class="form-group">
+              <label for="booking-phone" class="form-label">Phone <span class="required">*</span></label>
+              <input 
+                type="tel" 
+                id="booking-phone" 
+                name="phone" 
+                class="form-input" 
+                placeholder="+385 91 123 4567" 
+                required
+                autocomplete="tel"
+              >
+              <span class="form-error" id="phone-error">Please enter a valid phone number.</span>
+            </div>
+
+            <!-- Email (Optional) -->
+            <div class="form-group">
+              <label for="booking-email" class="form-label">Email <span class="optional">(Optional)</span></label>
+              <input 
+                type="email" 
+                id="booking-email" 
+                name="email" 
+                class="form-input" 
+                placeholder="name@example.com" 
+                autocomplete="email"
+              >
+              <span class="form-error" id="email-error">Please enter a valid email address or leave empty.</span>
+            </div>
+          </div>
+
+          <!-- Service Selection (Required) -->
+          <div class="form-group">
+            <label for="booking-service" class="form-label">Service <span class="required">*</span></label>
+            <select id="booking-service" name="service" class="form-select" required>
+              <option value="" disabled selected>Select a service...</option>
+              <option value="Haircut">Haircut</option>
+              <option value="Hair Coloring">Hair Coloring</option>
+              <option value="Balayage">Balayage</option>
+              <option value="Blow Dry">Blow Dry</option>
+              <option value="Hair Treatment">Hair Treatment</option>
+              <option value="Special Occasion">Special Occasion</option>
+            </select>
+            <span class="form-error" id="service-error">Please select a service.</span>
+          </div>
+
+          <!-- Date & Time Grid (Both Required) -->
+          <div class="form-row-2">
+            <!-- Preferred Date (Required) -->
+            <div class="form-group">
+              <label for="booking-date" class="form-label">Preferred Date <span class="required">*</span></label>
+              <input 
+                type="date" 
+                id="booking-date" 
+                name="preferredDate" 
+                class="form-input" 
+                required
+              >
+              <span class="form-error" id="date-error">Please choose a preferred date.</span>
+            </div>
+
+            <!-- Preferred Time (Required) -->
+            <div class="form-group">
+              <label for="booking-time" class="form-label">Preferred Time <span class="required">*</span></label>
+              <select id="booking-time" name="preferredTime" class="form-select" required>
+                <option value="" disabled selected>Select time...</option>
+                <option value="09:00">09:00 AM</option>
+                <option value="10:00">10:00 AM</option>
+                <option value="11:00">11:00 AM</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="13:00">01:00 PM</option>
+                <option value="14:00">02:00 PM</option>
+                <option value="15:00">03:00 PM</option>
+                <option value="16:00">04:00 PM</option>
+                <option value="17:00">05:00 PM</option>
+                <option value="18:00">06:00 PM</option>
+              </select>
+              <span class="form-error" id="time-error">Please choose a preferred time slot.</span>
+            </div>
+          </div>
+
+          <!-- Message (Optional) -->
+          <div class="form-group">
+            <label for="booking-message" class="form-label">Message <span class="optional">(Optional)</span></label>
+            <textarea 
+              id="booking-message" 
+              name="message" 
+              class="form-textarea" 
+              rows="3" 
+              placeholder="Tell us about your hair length, inspiration, or any special requests..."
+            ></textarea>
+          </div>
+
+          <!-- Form Submit Button: Send Booking via WhatsApp -->
+          <div class="form-submit-container">
+            <button type="submit" class="btn btn-whatsapp btn-block btn-lg" id="submit-booking-btn">
+              <svg class="whatsapp-btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.69C7.02 10.9 7.9 12.07 8.02 12.23C8.15 12.39 9.74 14.85 12.19 15.91C12.78 16.16 13.23 16.31 13.59 16.43C14.18 16.62 14.72 16.59 15.15 16.53C15.63 16.46 16.62 15.93 16.83 15.35C17.03 14.76 17.03 14.26 16.97 14.15C16.91 14.05 16.75 13.99 16.51 13.87C16.27 13.75 15.09 13.17 14.87 13.09C14.65 13.01 14.49 12.97 14.33 13.21C14.17 13.46 13.71 14.05 13.57 14.21C13.43 14.37 13.29 14.39 13.05 14.27C12.81 14.15 12.04 13.9 11.12 13.08C10.4 12.44 9.92 11.65 9.8 11.41C9.68 11.17 9.79 11.04 9.91 10.92C10.02 10.81 10.15 10.63 10.27 10.49C10.39 10.35 10.43 10.25 10.51 10.09C10.59 9.93 10.55 9.79 10.49 9.67C10.43 9.55 9.95 8.37 9.75 7.89C9.56 7.42 9.36 7.48 9.21 7.48C9.07 7.47 8.91 7.47 8.75 7.47C8.59 7.47 8.53 7.33 8.53 7.33Z"/>
+              </svg>
+              <span class="btn-text">Send Booking via WhatsApp</span>
+            </button>
+            <p class="form-help-text">Your request will open in WhatsApp. No account or backend is required.</p>
+          </div>
+        </form>
+
+        <!-- Success Message Container: Booking Request Prepared -->
+        <div class="booking-success-container" id="booking-success" style="display: none;" role="status" aria-live="polite">
+          <div class="success-icon-wrapper whatsapp-success-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="38" height="38" fill="currentColor" aria-hidden="true">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.69C7.02 10.9 7.9 12.07 8.02 12.23C8.15 12.39 9.74 14.85 12.19 15.91C12.78 16.16 13.23 16.31 13.59 16.43C14.18 16.62 14.72 16.59 15.15 16.53C15.63 16.46 16.62 15.93 16.83 15.35C17.03 14.76 17.03 14.26 16.97 14.15C16.91 14.05 16.75 13.99 16.51 13.87C16.27 13.75 15.09 13.17 14.87 13.09C14.65 13.01 14.49 12.97 14.33 13.21C14.17 13.46 13.71 14.05 13.57 14.21C13.43 14.37 13.29 14.39 13.05 14.27C12.81 14.15 12.04 13.9 11.12 13.08C10.4 12.44 9.92 11.65 9.8 11.41C9.68 11.17 9.79 11.04 9.91 10.92C10.02 10.81 10.15 10.63 10.27 10.49C10.39 10.35 10.43 10.25 10.51 10.09C10.59 9.93 10.55 9.79 10.49 9.67C10.43 9.55 9.95 8.37 9.75 7.89C9.56 7.42 9.36 7.48 9.21 7.48C9.07 7.47 8.91 7.47 8.75 7.47C8.59 7.47 8.53 7.33 8.53 7.33Z"/>
+            </svg>
+          </div>
+          <span class="status-pill-prepared">Booking request prepared</span>
+          <h3 class="success-headline">Your booking request is ready in WhatsApp. Please press Send to complete your request.</h3>
+          <p class="success-subtext">
+            WhatsApp has opened with your appointment details filled in. Please press <strong>Send</strong> in WhatsApp so our stylists receive your request and can confirm availability with you.
+          </p>
+
+          <!-- Appointment Summary Card -->
+          <div class="appointment-summary-card">
+            <h4>Request Summary</h4>
+            <div class="summary-row">
+              <span class="summary-label">Name:</span>
+              <strong class="summary-value" id="summary-name">—</strong>
+            </div>
+            <div class="summary-row">
+              <span class="summary-label">Phone:</span>
+              <span class="summary-value" id="summary-phone">—</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-label">Email:</span>
+              <span class="summary-value" id="summary-email">—</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-label">Service:</span>
+              <strong class="summary-value" id="summary-service">—</strong>
+            </div>
+            <div class="summary-row">
+              <span class="summary-label">Date & Time:</span>
+              <strong class="summary-value" id="summary-datetime">—</strong>
+            </div>
+            <div class="summary-row">
+              <span class="summary-label">Additional Message:</span>
+              <span class="summary-value" id="summary-message">—</span>
+            </div>
+            <div class="summary-ref">
+              Salon WhatsApp: <span id="summary-ref-id">+385 91 123 4567</span>
+            </div>
+          </div>
+
+          <!-- Success Actions -->
+          <div class="success-actions">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="reopen-whatsapp-link">
+              <svg class="whatsapp-btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7.02 8.48 7.02 9.69C7.02 10.9 7.9 12.07 8.02 12.23C8.15 12.39 9.74 14.85 12.19 15.91C12.78 16.16 13.23 16.31 13.59 16.43C14.18 16.62 14.72 16.59 15.15 16.53C15.63 16.46 16.62 15.93 16.83 15.35C17.03 14.76 17.03 14.26 16.97 14.15C16.91 14.05 16.75 13.99 16.51 13.87C16.27 13.75 15.09 13.17 14.87 13.09C14.65 13.01 14.49 12.97 14.33 13.21C14.17 13.46 13.71 14.05 13.57 14.21C13.43 14.37 13.29 14.39 13.05 14.27C12.81 14.15 12.04 13.9 11.12 13.08C10.4 12.44 9.92 11.65 9.8 11.41C9.68 11.17 9.79 11.04 9.91 10.92C10.02 10.81 10.15 10.63 10.27 10.49C10.39 10.35 10.43 10.25 10.51 10.09C10.59 9.93 10.55 9.79 10.49 9.67C10.43 9.55 9.95 8.37 9.75 7.89C9.56 7.42 9.36 7.48 9.21 7.48C9.07 7.47 8.91 7.47 8.75 7.47C8.59 7.47 8.53 7.33 8.53 7.33Z"/>
+              </svg>
+              Re-open in WhatsApp
+            </a>
+            <button type="button" class="btn btn-outline" id="book-another-btn">
+              New Request
+            </button>
+            <button type="button" class="btn btn-secondary" id="success-close-btn">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================================
+       GALLERY LIGHTBOX MODAL
+       ============================================== -->
+  <div class="modal-backdrop" id="gallery-lightbox-backdrop" aria-hidden="true">
+    <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Image preview">
+      <button type="button" class="lightbox-close-btn" id="close-lightbox-btn" aria-label="Close image preview">&times;</button>
+      <div class="lightbox-content">
+        <div class="lightbox-image-holder">
+          <img src="" alt="" id="lightbox-img" class="lightbox-img">
+        </div>
+        <div class="lightbox-caption">
+          <span class="lightbox-category" id="lightbox-category">Balayage</span>
+          <h3 class="lightbox-title" id="lightbox-title">Dimensional Waves</h3>
+          <button type="button" class="btn btn-primary btn-sm" id="lightbox-book-btn">
+            Book This Style
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================================
+       PRIVACY POLICY MODAL
+       ============================================== -->
+  <div class="modal-backdrop" id="privacy-modal-backdrop" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-sm" role="dialog" aria-modal="true" aria-labelledby="privacy-modal-title">
+      <div class="modal-header">
+        <h3 class="modal-title" id="privacy-modal-title">Privacy Policy</h3>
+        <button type="button" class="modal-close-btn" id="close-privacy-modal" aria-label="Close privacy policy">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="privacy-text">
+          At <strong>Luxe Hair Studio</strong>, we respect your privacy. This static website demo does not collect, sell, or transmit any personal data to remote servers or third-party marketing services.
+        </p>
+        <p class="privacy-text">
+          All appointment requests created in this demo interface are processed entirely inside your local browser session and are cleared when the page is reloaded.
+        </p>
+        <p class="privacy-text">
+          For real-world inquiries or official appointments, please reach us directly at <a href="mailto:hello@luxehairstudio.com" class="text-link">hello@luxehairstudio.com</a> or call <a href="tel:+385911234567" class="text-link">+385 91 123 4567</a>.
+        </p>
+        <div class="privacy-footer-action">
+          <button type="button" class="btn btn-primary btn-block" id="privacy-agree-btn">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==============================================
+       TOAST NOTIFICATION (Microinteraction)
+       ============================================== -->
+  <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
+    <span class="toast-message" id="toast-message">Notification message</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
